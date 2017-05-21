@@ -1,0 +1,17 @@
+language: java
+jdk: oraclejdk8
+
+install: true
+
+cache:
+  apt: true
+  directories:
+    - node_modules
+
+before_script:
+  - npm install csslint
+  - npm install --prefix ./ vnu-jar
+
+script:
+  - csslint ./css/
+  - eslint ./js/

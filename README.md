@@ -1,2 +1,0 @@
-# autolabwebsite
-website for autolab
